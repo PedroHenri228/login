@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  max-width: 1920px;
+  background-color: #f1f1f1;
+}
+
+.wave-container {
+    position: relative;
+    height: 100vh; /* Altura da div inteira */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse a div */
+    background-color: #001f2b; /* Cor de fundo para melhor visualização */
+}
+svg {
+    position: absolute;
+    bottom: 0; /* Alinha o SVG na parte inferior da div */
+    left: 0;
+    width: 100%; /* Largura total da div */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+.content {
+  width: 90%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  width: 70%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.header-form h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #001f2b;
+  font-style: normal;
+}
+
+.header-form h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #0000009a;
+  margin-top: .5rem;
+}
+
+.main-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  transition: 1s ease;
+  min-height: 3rem;
+  letter-spacing: 0.03rem;
+  text-indent: 1.25rem;
+  width: 400px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.submit-button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1d1c1c;
+  color: white;
+  font-size: 1.125rem;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  margin-top: .3rem;
+}
+
+.footer-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-group {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  color: #1d1c1c;
+  font-size: 1.125rem;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+}
+
+.button-group img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.line-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Adapte a largura se necessário */
+}
+
+.line-text::before,
+.line-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px; /* Espaçamento entre a linha e o texto */
+}
+
+.line-text span {
+  color: #666; /* Cor do texto */
+  font-weight: bold; /* Negrito no texto */
+}
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    border-radius: 0px 16px 16px 0px;
+    box-shadow: 5px 0px 10px #001f2b80;
+    overflow: hidden;
+  }
+  
+
+  
+  /* Animação da onda */
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+
+  .info {
+    color: #001f2baf;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .info a {
+    text-decoration: none;
+  }
